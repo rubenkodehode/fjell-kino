@@ -1,0 +1,31 @@
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.carousel .slick-slide{
+  width: auto !important;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-prev,
+.slick-next {
+  color: white;
+  z-index: 10;
+}
+
+.slick-track{
+  display: flex !important;
+  justify-content: center !important;
+}
+
+

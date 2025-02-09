@@ -1,0 +1,101 @@
+.movieCard {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.poster {
+  width: 100%;
+  object-fit: cover; /* Sikrer at bildet beholder proporsjoner */
+  border-radius: 10px;
+}
+
+.carouselMovie:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.gridMovie:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.movieInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hallBadge,
+.ratingBadge,
+.timeBadge {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Filmtidene */
+.timeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.timeBadge:hover {
+  transform: scale(1.1);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+/* Ikon styling */
+.icon {
+  font-size: 14px;
+}
+
+[data-theme="light"] .timeBadge,
+[data-theme="light"] .hallBadge,
+[data-theme="light"] .ratingBadge {
+  background-color: var(--secondary-light); /* Lysere bakgrunn */
+  color: black; /* Mørkere tekstfarge */
+}
+
+[data-theme="light"] .icon {
+  color: black;
+}
+[data-theme="light"] .movieCard h3 {
+  color: black;
+}
+[data-theme="light"] .movieCard {
+  background-color: var(--background-light);
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .movieCard {
+    width: 80%; /* Fyller ut bredden på mindre skjermer */
+  }
+
+  .movieInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .showtimes button {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,79 @@
+.bookingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--secondary-color);
+}
+
+.bookingBox {
+  background: var(--background-dark);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  border: 1px solid var(--primary-color);
+  max-width: 350px;
+  width: 90%;
+}
+
+.movieTitle, .movieTime {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.formGroup {
+  margin-top: 10px;
+}
+
+.formGroup input {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.totalPrice {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.confirmButton {
+  background: #ff5733;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.confirmButton:hover {
+  background: #ff7849;
+}
+
+[data-theme = "light"] .bookingContainer{
+  background-color: var(--background-light);
+}
+
+[data-theme = "light"] .bookingBox{
+  background-color: var(--background-light);
+}
+
+[data-theme= "light"] .bookingBox h1{
+  color: black;
+}
+
+[data-theme = "light"] .formGroup{
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .booking-container {
+    display: block !important;
+  }
+}
