@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import { About, Booking, Contact, Movies, UpcomingMovies } from "./pages";
 import { ThemeProvider } from "./context/ThemeContext";
 import { AccessibilityProvider } from "./context/AccessibilityContext";
-import "./styles/App.module.css";
+import styles from "./styles/App.module.css";
 
 function App() {
   return (
